@@ -281,22 +281,144 @@ public class Main {
 //            System.out.println(dig);
 //        }
 
-Scanner scn = new Scanner(System.in);
-int n = scn.nextInt();
+//Scanner scn = new Scanner(System.in);
+//int n = scn.nextInt();
+//
+//int inv = 0;
+//int op = 1;
+//while(n!=0){
+//    int od = n % 10;
+//    int id = op;
+//    int ip = od;
+//
+//    // make change to inv using ip and id
+//    inv = inv+id*(int)Math.pow(10,ip-1);
+//
+//    n=n/10;
+//    op++;
+//}
+//System.out.println(inv);
 
-int inv = 0;
-int op = 1;
-while(n!=0){
-    int od = n % 10;
-    int id = op;
-    int ip = od;
+//        Scanner scn = new Scanner(System.in);
+//        int n = scn.nextInt();
+//        int k = scn.nextInt();
+//
+//        int temp = n;
+//        int nod = 0;
+//        while (temp>0){
+//            temp=temp/10;
+//            nod ++;
+//        }
+//
+//        k = k % nod;
+//        if(k<0){
+//            k=k+nod;
+//        }
+//
+//            int div = 1;
+//            int mult = 1;
+//            for(int i = 1; i<=nod;i++){
+//                if(i<=k){
+//                    div=div*10;
+//                }else {
+//                    mult=mult*10;
+//                }
+//            }
+//            int q = n/div;
+//            int r = n%div;
+//
+//             int rot = r * mult + q;
+//             System.out.println(rot);
 
-    // make change to inv using ip and id
-    inv = inv+id*(int)Math.pow(10,ip-1);
+//        Scanner scn = new Scanner(System.in);
+//        int n1 = scn.nextInt();
+//        int n2 = scn.nextInt();
+//
+//        int on1 = n1;
+//        int on2 = n2;
+//
+//        while(n1%n2!=0){
+//             int rem = n1%n2;
+//             n1=n2;
+//             n2=rem;
+//        }
+//
+//        int gcd = n2;
+//        int lcm = (on1*on2)/gcd;
+//
+//        System.out.println(gcd);
+//        System.out.println(lcm);
 
-    n=n/10;
-    op++;
-}
-System.out.println(inv);
+//        Scanner scn = new Scanner(System.in);
+//        int n = scn.nextInt();
+//        int i =2;
+//        while(n>1){
+//
+//            if(n%i==0){
+//                n=n/i;
+//                System.out.println(i);
+//            } else  {
+//                i++;
+//            }
+//
+//        }
+
+//        Scanner scn = new Scanner(System.in);
+//        int n = scn.nextInt();
+//
+//        for(int div=2; div*div<=n;div++){
+//            while(n%div==0){
+//                n=n/div;
+//                System.out.print(div +" ");
+//            }
+//        }
+//        if(n!=1){
+//            System.out.print(n);
+//        }
+
+//        Scanner scn = new Scanner(System.in);
+//        int a = scn.nextInt();
+//        int b = scn.nextInt();
+//        int c = scn.nextInt();
+//
+//        if(a*a+b*b==c*c){
+//            System.out.println(true);
+//        } else if (a*a+c*c==b*b) {
+//            System.out.println(true);
+//        } else if (b*b+c*c==a*a) {
+//            System.out.println(true);
+//        }else{
+//            System.out.println(false);
+//        }
+
+//        Scanner scn = new Scanner(System.in);
+//        int a = scn.nextInt();
+//        int b = scn.nextInt();
+//        int c = scn.nextInt();
+//
+//        int max=a;
+//        if(b>=max){
+//            max=b;
+//        }
+//        if(c>=max){
+//            max=c;
+//        }
+//        if(max==a){
+//            boolean flag = ((b*b+c*c)==(a*a));
+//            System.out.println(flag);
+//        }else if(max==b){
+//            boolean flag = ((a*a+c*c)==(b*b));
+//            System.out.println(flag);
+//        }else{
+//            boolean flag = ((b*b+a*a)==(c*c));
+//            System.out.println(flag);
+//        }
+
+        Scanner scn = new Scanner (System.in);
+        int n =scn.nextInt();
+
+        for(int i=1; i*i<=n;i++){
+            System.out.println(i*i);
+        }
     }
         }
