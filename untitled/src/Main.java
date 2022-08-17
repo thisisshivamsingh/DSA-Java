@@ -272,13 +272,31 @@ public class Main {
 //            div=div/10;
 //        }
 
-        Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
+//        Scanner scn = new Scanner(System.in);
+//        int n = scn.nextInt();
+//
+//        while(n>0){
+//            int dig = n % 10;
+//            n=n/10;
+//            System.out.println(dig);
+//        }
 
-        while(n>0){
-            int dig = n % 10;
-            n=n/10;
-            System.out.println(dig);
-        }
+Scanner scn = new Scanner(System.in);
+int n = scn.nextInt();
+
+int inv = 0;
+int op = 1;
+while(n!=0){
+    int od = n % 10;
+    int id = op;
+    int ip = od;
+
+    // make change to inv using ip and id
+    inv = inv+id*(int)Math.pow(10,ip-1);
+
+    n=n/10;
+    op++;
+}
+System.out.println(inv);
     }
         }
