@@ -188,7 +188,6 @@ public class Main {
 //      }
 
 
-
 //    int low = scn.nextInt();
 //    int high = scn.nextInt();
 //
@@ -414,11 +413,95 @@ public class Main {
 //            System.out.println(flag);
 //        }
 
-        Scanner scn = new Scanner (System.in);
-        int n =scn.nextInt();
+//        Scanner scn = new Scanner (System.in);
+//        int n =scn.nextInt();
+//
+//        for(int i=1; i*i<=n;i++){
+//            System.out.println(i*i);
+//        }
 
-        for(int i=1; i*i<=n;i++){
-            System.out.println(i*i);
+//        Scanner scn = new Scanner(System.in);
+//        int n = scn.nextInt();
+//
+//        String star = "";
+//
+//        for(int i=1;i<=n;i++){
+//            star="";
+//            for(int j=1;j<=i;j++){
+//                star=star+"*";
+//            }
+//            System.out.println(star);
+//        }
+
+//        Scanner scn = new Scanner(System.in);
+//        int n = scn.nextInt();
+//
+//        for(int i=1;i<=n;i++){
+//            for(int j=1; j<=i; j++){
+//                System.out.print("*\t");
+//            }
+//            System.out.println();
+//        }
+
+//        Scanner scn = new Scanner(System.in);
+//        int on = scn.nextInt();
+//        int n = on;
+//        String star="";
+//
+//        for(int i=1;i<=on;i++){
+//            star ="";
+//            for(int j=1;j<=n;j++){
+//            star=star+"*";
+//            }
+//            System.out.println(star);
+//            n--;
+//        }
+
+//        Scanner scn = new Scanner(System.in);
+//        int n = scn.nextInt();
+//        for (int i = n; i >= 1; i--) {
+//            for (int j = 1; j <= i; j++) {
+//                System.out.print("*\t");
+//            }
+//            System.out.println();
+//        }
+
+//        Scanner scn = new Scanner(System.in);
+//        int n = scn.nextInt();
+//        int on = n;
+//        String spc = "";
+//        String row="";
+//        for(int i=1;i<=n;i++){
+//            row="";
+//            on--;
+//            spc="";
+//            for(int k=n;k<=(on-1);k--){
+//                spc=spc+" ";
+//            }
+//        for (int j = 1; j<=i;j++){
+//            row=row+"*\t";
+//        }
+//            System.out.print(spc+row);
+//            System.out.println();
+//        }
+
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+
+        int sp = n-1;
+        int st = 1;
+        for(int i=1; i<=n; i++){
+//            System.out.print(sp+", "+st);
+            for(int j=1; j<=sp; j++){
+                System.out.print("\t");
+            }
+            for(int j=1; j<=st; j++){
+                System.out.print("*\t");
+            }
+            sp--;
+            st++;
+            System.out.println();
         }
+
     }
         }
