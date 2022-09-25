@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Array/src"/>
+	<classpathentry kind="src" path="patterns/src"/>
+	<classpathentry kind="src" path="untitled/operatorsAndForLoop/src"/>
+	<classpathentry kind="src" path="untitled/Patterns2/src"/>
+	<classpathentry kind="src" path="untitled/src"/>
+	<classpathentry kind="output" path="out/production/Array"/>
+</classpath>
